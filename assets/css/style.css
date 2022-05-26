@@ -108,6 +108,15 @@ header .container nav .menu-social img {
     margin-top: 2.3rem;
 }
 
+.s-hero .container .title-box .techs img {
+    transform: translateY(25%);
+    transition: all 0.2s;
+}
+
+.s-hero .container .title-box .techs img:hover {
+    transform: translateY(10%);
+}
+
 .s-hero .container .title-box .btn-primary {
     margin-top: 4rem;
     padding: 1rem 5.6rem;
@@ -149,6 +158,7 @@ header .container nav .menu-social img {
     filter: brightness(90%);
   }
   
+  /* Aqui trata somente o card active */
   .s-success .container .cards .card.active {
     background-color: var(--primary-color);
   }
@@ -181,3 +191,171 @@ header .container nav .menu-social img {
     font-size: 2.8rem;
     line-height: 3.9rem;
   }
+
+
+  /* About */
+
+.s-about {
+    background-color: var(--black-color-medium);
+    padding: 6rem 0;
+  }
+  
+  .s-about .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .s-about .container .about-me {
+    width: 100%;
+    max-width: 71rem;
+  }
+  
+  .s-about .container .about-me p {
+    font-weight: 400;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.83);
+    margin-top: 2.4rem;
+  }
+  
+  .s-about .container .about-me ul {
+    display: flex;
+    gap: 1.6rem;
+    margin-top: 3.2rem;
+  }
+  .s-about .container .about-me ul li a img {
+    transition: all 0.2s;
+  }
+  .s-about .container .about-me ul li a img:hover {
+    transform: translateY(-12%);
+    filter: brightness(80%);
+  }
+  
+  .s-about .container .my-picture img {
+    border-radius: 4px;
+  }
+
+  /* Cases */
+.s-cases {
+  padding: 4.5rem 0;
+  margin-bottom: 8rem;
+}
+
+.s-cases .container {
+  display: flex;
+  flex-direction: column;
+}
+.s-cases .container .title-cases {
+  margin-bottom: 7.3rem;
+}
+
+.s-cases .container .cases {
+  display: flex;
+  width: 100%;
+  gap: 1.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-cases .container .cases .case:nth-child(2) {
+  margin-top: -1.2rem;
+}
+
+.s-cases .container .cases img {
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.s-cases .container .cases img:hover {
+  transform: translateY(-2%);
+}
+
+/* Contact */
+
+.s-contact {
+    padding-bottom: 4rem;
+  }
+  
+  .s-contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .s-contact .container .title-contact h2 {
+    margin-bottom: 2.4rem;
+  }
+  
+  .s-contact .container .form-contact {
+    width: 100%;
+    max-width: 48.6rem;
+  }
+  
+  .s-contact .container .form-contact .input-group input[type="text"] {
+    margin-bottom: 3.1rem;
+  }
+  .s-contact .container .form-contact .input-group textarea {
+    margin-bottom: 0;
+  }
+  .input-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .s-contact .container .form-contact button {
+    border-radius: 2.4rem;
+    background-color: var(--primary-color);
+    padding: 1rem 2.4rem;
+    border: none;
+    margin-top: 1.7rem;
+    font-weight: 700;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--black-color-medium);
+  }
+  
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer .container .copy {
+    padding: 5.2rem 0;
+  }
+  
+  footer .container .copy {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+
+  /* Botão back to top */
+  .btn-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    text-decoration: none;
+}
+.btn-top::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+.btn-top:hover::after {
+    margin-top:-8px;
+}

@@ -45,7 +45,7 @@ header .container nav .menu-social img {
 /* Section S-Hero */
 
 .s-hero {
-    background: url(../img/s-hero-bg.jpg);
+    background: url(../img/bg-s-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
@@ -127,6 +127,7 @@ header .container nav .menu-social img {
 .s-success {
     padding: 14.4rem 0;
     margin: 0 auto;
+    background: url(../img/bg-s-success.jpg);
   }
   
   .s-success .container {
@@ -196,7 +197,8 @@ header .container nav .menu-social img {
   /* About */
 
 .s-about {
-    background-color: var(--black-color-medium);
+    /*background-color: var(--black-color-medium);*/
+    background: url(../img/about-bg-3.jpg );
     padding: 6rem 0;
   }
   
@@ -233,12 +235,16 @@ header .container nav .menu-social img {
   
   .s-about .container .my-picture img {
     border-radius: 4px;
+    border: solid 1px;
+    border-color: var(--primary-color);
   }
 
   /* Cases */
 .s-cases {
   padding: 4.5rem 0;
   margin-bottom: 8rem;
+  background: url(../img/cases-bg.jpg);
+
 }
 
 .s-cases .container {
